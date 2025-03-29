@@ -1,4 +1,3 @@
-import { View, Text } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -47,7 +46,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="notifications"
+        name="notification"
         options={{
           tabBarIcon: ({ size, color }) => (
             <Ionicons name="heart" size={size} color={color} />
