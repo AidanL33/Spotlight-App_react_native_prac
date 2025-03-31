@@ -1,11 +1,6 @@
-import { Text, TouchableOpacity, View } from "react-native";
-import { styles } from "../styles/auth.styles";
-import { Link } from "expo-router";
+import React from "react";
+import { Redirect } from "expo-router";
 
 export default function Index() {
-  return (
-    <View style={styles.container}>
-      <Link href={"/notification"}>visit notification screen</Link>
-    </View>
-  );
+  return <Redirect href="/(auth)/login" />;
 }
